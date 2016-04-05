@@ -1,0 +1,20 @@
+﻿<ESRI.Configuration xmlns="http://schemas.esri.com/Desktop/AddIns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>ExtentCmd</Name>
+  <AddInID>{4c5763ba-c7ba-4caf-9621-028046d99837}</AddInID>
+  <Description>Simple command to report the current map extent.</Description>
+  <Version>1.0</Version>
+  <Image>Images\ExtentCmd.png</Image>
+  <Author>mark4238</Author>
+  <Company></Company>
+  <Date>4/5/2016</Date>
+  <Targets>
+    <Target name="Desktop" version="10.4" />
+  </Targets>
+  <AddIn language="CLR" library="ExtentCmd.dll" namespace="ExtentCmd">
+    <ArcMap>
+      <Commands>
+        <Button id="ExtentCmd_CmdExtent" class="CmdExtent" message="Report the map's extent" caption="Map Extent" tip="Click to find the map's current extent" category="Add-In Controls" image="Images\CmdExtent.png" onDemand="false" />
+      </Commands>
+    </ArcMap>
+  </AddIn>
+</ESRI.Configuration>
